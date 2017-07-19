@@ -8,4 +8,4 @@ MatchMatch Game(swfit, ios)
 
 # ScreenShot
 
-![ScreenShot](https://raw.github.com/4dot/MatchMatch/master/docs/screenshot.jpg)
+![ScreenShot](https://raw.github.com/4dot/MatchMatch/master/doc/screenshot.jpg)
