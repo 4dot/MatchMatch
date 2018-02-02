@@ -9,3 +9,7 @@ MatchMatch Game(swfit, ios)
 # ScreenShot
 
 ![ScreenShot](https://raw.github.com/4dot/MatchMatch/master/doc/screenshot.jpg)
+
+# Data Flow
+
+![ScreenShot](https://raw.github.com/4dot/MatchMatch/master/doc/MatchMatch_dataFlow.jpg)
