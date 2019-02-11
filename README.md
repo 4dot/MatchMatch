@@ -1,5 +1,5 @@
 # MatchMatch
-MatchMatch Game(swfit, ios)
+MatchMatch Game(swift, ios)
 
 # README #
 
