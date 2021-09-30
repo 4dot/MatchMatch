@@ -44,7 +44,7 @@ class MatchCollectionViewCell : UICollectionViewCell {
      @param options UIViewAnimationOptions
      @param complte callback
     */
-    func flipCard(to: CardViewType, optiions: UIViewAnimationOptions, complete: (()->Void)?) {
+    func flipCard(to: CardViewType, optiions: UIView.AnimationOptions, complete: (()->Void)?) {
         
         if currViewType == to {
             return

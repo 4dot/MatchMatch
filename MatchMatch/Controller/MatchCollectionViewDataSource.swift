@@ -107,7 +107,7 @@ class MatchCollectionViewDataSource : NSObject, UICollectionViewDataSource {
         parameters["nojsoncallback"] = 1
         
         // request
-        Alamofire.request(FlickrRestSeerviceURL,  method: .get, parameters: parameters)
+        AF.request(FlickrRestSeerviceURL,  method: .get, parameters: parameters)
             .validate()
             .responseJSON { [weak self] (response) in
                 
@@ -124,7 +124,7 @@ class MatchCollectionViewDataSource : NSObject, UICollectionViewDataSource {
                     print(error)
                     
                 case .success:
-                    if let values = response.result.value {
+                    if let values = response.value {
                         let json = JSON(values)
                         print("JSON: \(json)")
                         
@@ -206,7 +206,7 @@ class MatchCollectionViewDataSource : NSObject, UICollectionViewDataSource {
         
         // default placeholder(back view)
         cell.imageView[CardViewType.Back.rawValue].image =
-            UIImage(named: "placeHolder")?.af_imageRounded(withCornerRadius: 4.0)
+        UIImage(named: "placeHolder")?.af.imageRounded(withCornerRadius: 4.0)
         
         let imgURL = card.card.frontImageURL
         if imgURL.isEmpty {
@@ -219,7 +219,7 @@ class MatchCollectionViewDataSource : NSObject, UICollectionViewDataSource {
                 DispatchQueue.main.async {
                     // set front image
                     cell.imageView[CardViewType.Front.rawValue].image =
-                        image?.af_imageRounded(withCornerRadius: 4.0)
+                    image?.af.imageRounded(withCornerRadius: 4.0)
                 }
             }
         }

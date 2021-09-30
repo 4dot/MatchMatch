@@ -46,8 +46,8 @@ class CardImageManager {
             return nil
         }
         // 2. request to image url
-        return Alamofire.request(url, method: .get).responseImage { response in
-            guard let image = response.result.value else {
+        return AF.request(url, method: .get).responseImage { response in
+            guard let image = response.value else {
                 completion(nil)
                 return
             }
